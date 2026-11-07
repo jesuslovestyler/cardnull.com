@@ -7,21 +7,6 @@
     <meta name="description" content="Cardnull — computers and software for Catholics. A web browser, Bibles, and a library of classic Christian books, all free and public domain. Cardnull OS is in development." />
     <link rel="icon" href="data:," />
     <title>Cardnull — Computers &amp; Software for Catholics</title>
-<meta name="description" content="Cardnull — computers and software for Catholics. Free, public-domain software from a Catholic maker in North Carolina: Chirpy Browser, Catholic Bible apps, and the Library of Faith.">
-<link rel="canonical" href="https://cardnull.com/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Cardnull">
-<meta property="og:title" content="Cardnull — Computers & Software for Catholics">
-<meta property="og:description" content="Free, public-domain computers and software for Catholics — Chirpy Browser, Catholic Bible apps, the Library of Faith, and Cardnull OS to come. Freely have you received, freely give.">
-<meta property="og:url" content="https://cardnull.com/">
-<meta property="og:image" content="https://cardnull.com/og-image.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Cardnull — Computers & Software for Catholics">
-<meta name="twitter:description" content="Free, public-domain computers and software for Catholics — Chirpy Browser, Catholic Bible apps, the Library of Faith, and Cardnull OS to come.">
-<meta name="twitter:image" content="https://cardnull.com/og-image.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
@@ -183,6 +168,11 @@
         margin-top: 10px; font-weight: 600; font-size: 15.5px; text-decoration: none; color: var(--red-bright);
       }
       .app .go:hover { text-decoration: underline; }
+      .sec-head .go {
+        display: inline-block; margin-top: 14px; font-weight: 600; font-size: 15.5px;
+        text-decoration: none; color: var(--red-bright);
+      }
+      .sec-head .go:hover { text-decoration: underline; }
       .tag {
         font-family: "IBM Plex Mono", monospace; font-size: 11.5px; font-weight: 600;
         letter-spacing: 0.8px; text-transform: uppercase; white-space: nowrap;
@@ -325,7 +315,9 @@
                 A web browser for Mac with an engine written from scratch &mdash; no
                 WebKit, no Chromium underneath. Built for Catholics, by Catholics, and
                 released into the public domain. The engine now stands at version
-                0.23, with broad CSS support in place; a free download follows when it
+                0.42, verified running on November 6, 2026 &mdash; its own JavaScript
+                engine passes a 59-promise test suite, and the Shield family filter
+                is on by default with no off switch; a free download follows when it
                 is ready.
               </p>
               <p class="meta">Mac app &middot; Swift &middot; public domain (Unlicense)</p>
@@ -381,21 +373,29 @@
           <div class="sec-head">
             <h2>Cardnull OS</h2>
             <p>
-              The next step: a whole computer system, built from the ground up &mdash;
-              including its own kernel, written from scratch by us and released into
-              the public domain, like all of Cardnull&rsquo;s work. It is in
-              development &mdash; there is nothing to download yet, and this page will
-              say so plainly until there is.
+              Cardnull OS is in active development now: a whole computer system
+              built from the ground up &mdash; including its own kernel, written in
+              Swift from scratch and released into the public domain, like all of
+              Cardnull&rsquo;s work. On November 6, 2026 it reached its first five
+              milestones, each one verified booting and running on Tyler&rsquo;s
+              own Mac: it boots and writes CARDNULL on the screen; it takes
+              keyboard input; it answers commands in a small shell (help, about,
+              verse, clear); it runs on interrupts with a 100 Hz timer heartbeat
+              and an uptime command; and it boots through a UEFI door as well as
+              the classic BIOS door &mdash; one system, two doors. It is still in
+              development &mdash; not released, and there is no public download
+              yet.
             </p>
+            <a class="go" href="https://github.com/jesuslovestyler/Cardnull-OS">Follow Cardnull OS on GitHub &rarr;</a>
           </div>
 
           <div class="os-panel">
             <div>
               <h3>An operating system that starts from the faith</h3>
               <p>
-                We are writing our own kernel from scratch &mdash; the heart of the
-                system is ours at every layer, and public domain like the rest of our
-                work. TempleOS, Terry Davis&rsquo;s from-scratch, public-domain system
+                Our own kernel is written from scratch, in Swift &mdash; the heart of
+                the system is ours at every layer, and public domain like the rest of
+                our work. TempleOS, Terry Davis&rsquo;s from-scratch, public-domain system
                 built for God, is our precedent and our teacher &mdash; never our
                 foundation. On that heart we will build a calm, simple Catholic
                 system: the browser is Chirpy, the Bible is on the shelf from the
@@ -426,7 +426,7 @@
             <div class="step">
               <p class="n">STEP TWO &middot; IN DEVELOPMENT</p>
               <h3>Cardnull OS</h3>
-              <p>Our own kernel and the software gathered into one system, all written by us and all public domain &mdash; free to download and install on a computer you already own.</p>
+              <p>Our own kernel is written and booting, and the system is under active development &mdash; our software gathered into one system, all written by us and all public domain, free to download and install on a computer you already own when it is ready.</p>
             </div>
             <div class="step">
               <p class="n">STEP THREE &middot; LATER</p>
